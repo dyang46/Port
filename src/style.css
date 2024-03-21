@@ -57,6 +57,13 @@ footer {
   overflow:hidden;
 }
 
+p {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
 .project {
   margin-bottom: 20px;
   padding: 20px;
