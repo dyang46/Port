@@ -51,10 +51,10 @@ const projects: Project[] = [
 ];
 
 const Pages: Page[] = [
-  { name: 'Home', url: 'home.html' },
-  { name: 'UI/UX', url: 'uiux.html' },
-  { name: 'Games', url: 'games.html' },
-  { name: 'About', url: 'about.html' }
+  { name: 'Home', url: './hs/home.html' },
+  { name: 'UI/UX', url: './hs/uiux.html' },
+  { name: 'Games', url: './hs/games.html' },
+  { name: 'About', url: './hs/about.html' }
 
 ]
 
@@ -65,7 +65,7 @@ const Pages: Page[] = [
 
 addPage(Pages);
 
-loadPage('home.html');
+loadPage('./hs/home.html');
 
 /*function addButton(buttons: NewButton[]) {
   const overview = document.getElementById('projectOverview') as HTMLDivElement;
@@ -101,7 +101,7 @@ function loadPage(url: string) {
       .then(data => {            
         content.innerHTML = data;
         currentPage = url;
-        if (url == 'uiux.html') {
+        if (url == './hs/uiux.html') {
           generateProjectOverview();
           handleProjectDetailButtons();
           handleBackButton();
